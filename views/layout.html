@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <meta name="viewport" content="width=device-width">
+  <head>
+    <title>{% block title %}Trip Planner{% endblock %}</title>
+    <link href="/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/jquery/dist/jquery.min.js"></script>
+<!--     <link rel="stylesheet" href="/stylesheets/style.css"> -->
+  </head>
+  <body>
+  	<nav class="navbar navbar-default navbar-fixed-top">
+	    <a href='/' class="navbar-brand">Trip Planner</a>
+	    <a href='#' class="navbar-text">Home</a>
+	    <a href='#' class="navbar-text">About</a>
+	    <a href='#' class="navbar-text">Contact</a>
+	</nav>
+      {% block content %}{% endblock %}
+  </body>
+</html>
