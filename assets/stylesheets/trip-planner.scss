@@ -13,10 +13,6 @@
 	margin-bottom: 0;
 }
 
-iframe {
-	height: 100vh;
-	border: 0;
-}
 
 .block-top {
 	height: 36%;
@@ -30,4 +26,30 @@ iframe {
 	background-color: #EBE0D6;
 	margin-top: 10%;
 	border-radius: 5%;
+	text-align: center;
 }
+
+.options {
+	text-align: center;
+}
+
+#map-canvas {
+	height:100vh;
+}
+
+select{
+	width: 70%;
+	display: block;
+	margin: 0 auto;
+
+}
+
+.selects{
+	margin-bottom: 15%;
+}
+
+.days{
+	background-color: #B49B82;
+	height: 15%;
+}
+
