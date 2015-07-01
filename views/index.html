@@ -8,7 +8,8 @@
 			<div class="options">
 				<div class="selects">
 					<p class="glyphicon glyphicon-home"> Hotels </p>
-					<select>
+					<p></p>
+					<select class="btn btn-default">
 						{% for hotel in hotels %}
 							<option value="{{hotel._id}}">{{hotel.name}}</option>
 						{% endfor %}
@@ -16,7 +17,8 @@
 				</div>
 				<div class="selects">
 					<p class="glyphicon glyphicon-cutlery"> Restaurants</p>
-					<select>
+					<p></p>
+					<select class="btn btn-default">
 						{% for restaurant in restaurants %}
 							<option value="{{restaurant._id}}">{{restaurant.name}}</option>
 						{% endfor %}
@@ -24,7 +26,8 @@
 				</div>
 				<div class="selects">
 					<p class="glyphicon glyphicon-flag"> Things to do</p>
-					<select>
+					<p></p>
+					<select class="btn btn-default">
 						{% for thing in things %}
 							<option value="{{thing._id}}">{{thing.name}}</option>
 						{% endfor %}
@@ -35,7 +38,10 @@
 		<div class="block-bottom">
 			<h2>Day 1</h2>
 			<div class='days'>
-				
+				<button class="btn btn-primary">1</button>
+		        <button class="btn btn-primary">2</button>
+		        <button class="btn btn-primary">3</button>
+		        <button class="btn btn-primary">+</button>
 			</div>
 		</div>
 	</div>

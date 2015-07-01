@@ -14,7 +14,7 @@ var placeSchema = new mongoose.Schema({
 var hotelSchema = new mongoose.Schema({
 	name: String,
 	place: Array,
-	num_stars: Number,
+	num_stars: {type:Number, min:1, max:5},
 	amenities: String
 });
 
@@ -28,7 +28,7 @@ var restaurantSchema = new mongoose.Schema({
 	name: String,
 	place: Array,
 	cuisine: String,
-	price: Number
+	price: {type:Number, min:1, max:5}
 });
 
 var Place = mongoose.model('Place',placeSchema);
