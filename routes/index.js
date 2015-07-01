@@ -8,7 +8,13 @@ var Place = model.Place;
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index',{});
+	Hotel.find({}, function(err, hotels) {
+		Restaurant.find({}, function(err, restaurants) {
+			ThingToDo.find({}, function(err, things) {
+				res.render('index',{ hotels: hotels, restaurants: restaurants, things: things });
+			});
+		});
+	});
 });
 
 
